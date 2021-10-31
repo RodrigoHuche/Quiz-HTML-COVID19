@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covidquiz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte para Icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- botão inicial -->
+    <div class="start_btn"><button>Começar</button></div>
+
+    <!-- Box de informação -->
+    <div class="info_box">
+        <div class="info-title"><span>Regras do Jogo</span></div>
+        <div class="info-list">
+            <div class="info">1. Você terá <span>15 segundos</span> para cada questão.</div>
+            <div class="info">2. Uma vez escolhido a reposta, não pode ser desfeita.</div>
+            <div class="info">3. Você não poderá responder fora do tempo.</div>
+            <div class="info">4. Você não pode sair do Quiz enquanto está jogando.</div>
+            <div class="info">5. Você receberá pontos em suas respostas corretas.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Sair</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Box do quiz -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Covid-19 Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Tempo</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- folha de questões JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- folha de opções JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer da Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- contador de questões JavaScript -->
+            </div>
+            <button class="next_btn">Próximo</button>
+        </footer>
+    </div>
+
+    <!--  Box Resultado -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Você completou o Quiz!</div>
+        <div class="score_text">
+            <!-- calculadora JavaScript do resultado -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Refazer</button>
+            <button class="quit">Sair</button>
+        </div>
+    </div>
+
+    <!-- Questões em JavaScript  -->
+    <script src="js/questions.js"></script>
+
+    <!-- Codigo JavaScript  -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
